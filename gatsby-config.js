@@ -1,7 +1,8 @@
 module.exports = {
     siteMetadata: {
         siteUrl: `https://www.ailequal.com`,
-        title: `ailequal`
+        title: `ailequal`,
+        description: `My developer portfolio website.`
     },
     plugins: [
         "gatsby-plugin-image",
