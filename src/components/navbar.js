@@ -5,9 +5,9 @@ import {Link} from "gatsby";
 import {StaticImage} from "gatsby-plugin-image";
 
 const navigation = [
-    {name: 'Home', href: '/', current: true},
-    {name: 'Skills', href: '/skills', current: false},
-    {name: 'Projects', href: '/projects', current: false}
+    {name: 'Home', href: '/'},
+    {name: 'Skills', href: '/skills'},
+    {name: 'Projects', href: '/projects'}
 ]
 
 const Navbar = () => {
@@ -39,7 +39,6 @@ const Navbar = () => {
                                                 to={item.href}
                                                 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                                 activeClassName="bg-gray-900 text-white"
-                                                aria-current={item.current ? 'page' : undefined}
                                             >
                                                 {item.name}
                                             </Link>
@@ -79,7 +78,6 @@ const Navbar = () => {
                                     to={item.href}
                                     className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                                     activeClassName="bg-gray-900 text-white"
-                                    aria-current={item.current ? 'page' : undefined}
                                 >
                                     {item.name}
                                 </Disclosure.Button>
