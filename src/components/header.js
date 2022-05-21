@@ -1,9 +1,12 @@
 import * as React from 'react'
+import Container from "./container";
 
 const Header = () => {
     return (
         <header>
-            <span>header</span>
+            <Container>
+                <span>header</span>
+            </Container>
         </header>
     )
 }

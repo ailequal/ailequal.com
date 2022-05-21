@@ -25,7 +25,6 @@ const Layout = ({pageTitle, children}) => {
             <Navbar></Navbar>
 
             <main>
-                <h1>{pageTitle}</h1>
                 {children}
             </main>
 
