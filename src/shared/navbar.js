@@ -20,7 +20,7 @@ const Navbar = () => {
 
                             {/* Left: navigation. */}
                             <div
-                                className="inset-y-0 left-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                                className="inset-y-0 left-0 flex justify-between items-center pr-2 sm:static sm:inset-auto sm:mx-6 sm:pr-0 sm:w-full">
                                 <div className="flex-shrink-0 flex items-center">
                                     <Link to="/">
                                         <StaticImage
