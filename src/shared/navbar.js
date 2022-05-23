@@ -8,8 +8,8 @@ const navigation = [
     {name: 'Home', href: '/', internal: true},
     {name: 'Skills', href: '/skills', internal: true},
     {name: 'Projects', href: '/projects', internal: true},
-    {name: 'Contact me', href: '/contact-me', internal: true},
-    {name: 'Blog (WIP)', href: 'https://www.rainypast.com', internal: false}
+    {name: 'Blog (WIP)', href: 'https://www.rainypast.com', internal: false},
+    {name: 'Contact me', href: '/contact-me', internal: true}
 ]
 
 const Navbar = () => {
