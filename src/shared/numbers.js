@@ -12,11 +12,11 @@ const candidates = [
 
 const Numbers = () => {
     return (
-        <>
+        <div>
             {candidates.map(element => {
                 return <Number key={element.number} candidate={element}></Number>
             })}
-        </>
+        </div>
     )
 }
 
