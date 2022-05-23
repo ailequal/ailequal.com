@@ -4,7 +4,7 @@ import {StaticImage} from "gatsby-plugin-image";
 
 const Header = () => {
     return (
-        <div className="border-2 border-blue-400">
+        <div>
             <Container>
                 <div className="flex flex-col justify-center items-center gap-2 my-10">
                     <StaticImage
@@ -13,7 +13,7 @@ const Header = () => {
                         src="../images/ailequal.png"
                     />
 
-                    <div className="flex flex-col justify-center items-center basis-2/3 sm:max-w-md w-5/6 sm:w-4/6">
+                    <div className="flex flex-col justify-center items-center basis-2/3 w-5/6 sm:max-w-md sm:w-4/6">
                         <div className="my-3.5">
                             <h1 className="text-6xl">ailequal</h1>
                         </div>
