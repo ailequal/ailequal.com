@@ -5,9 +5,10 @@ import {Link} from "gatsby";
 import {StaticImage} from "gatsby-plugin-image";
 
 const navigation = [
-    {name: 'Home', href: '/'},
-    {name: 'Skills', href: '/skills'},
-    {name: 'Projects', href: '/projects'}
+    {name: 'Home', href: '/', internal: true},
+    {name: 'Skills', href: '/skills', internal: true},
+    {name: 'Projects', href: '/projects', internal: true},
+    {name: 'Blog (WIP)', href: 'https://www.rainypast.com', internal: false}
 ]
 
 const Navbar = () => {
@@ -33,16 +34,31 @@ const Navbar = () => {
 
                                 <div className="hidden sm:block sm:ml-6">
                                     <div className="flex space-x-4">
-                                        {navigation.map((item) => (
-                                            <Link
-                                                key={item.name}
-                                                to={item.href}
-                                                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                                                activeClassName="bg-gray-900 text-white"
-                                            >
-                                                {item.name}
-                                            </Link>
-                                        ))}
+                                        {navigation.map((item) => {
+                                            if (item.internal) {
+                                                return (
+                                                    <Link
+                                                        key={item.name}
+                                                        to={item.href}
+                                                        className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                                        activeClassName="bg-gray-900 text-white"
+                                                    >
+                                                        {item.name}
+                                                    </Link>
+                                                )
+                                            }
+
+                                            return (
+                                                <a
+                                                    key={item.name}
+                                                    href={item.href}
+                                                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                                    rel="external"
+                                                >
+                                                    {item.name}
+                                                </a>
+                                            )
+                                        })}
                                     </div>
                                 </div>
                             </div>
@@ -71,17 +87,32 @@ const Navbar = () => {
                     {/* Mobile: hamburger menu. */}
                     <Disclosure.Panel className="sm:hidden">
                         <div className="px-2 pt-2 pb-3 space-y-1">
-                            {navigation.map((item) => (
-                                <Disclosure.Button
-                                    key={item.name}
-                                    as={Link}
-                                    to={item.href}
-                                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                                    activeClassName="bg-gray-900 text-white"
-                                >
-                                    {item.name}
-                                </Disclosure.Button>
-                            ))}
+                            {navigation.map((item) => {
+                                if (item.internal) {
+                                    return (
+                                        <Disclosure.Button
+                                            key={item.name}
+                                            as={Link}
+                                            to={item.href}
+                                            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                            activeClassName="bg-gray-900 text-white"
+                                        >
+                                            {item.name}
+                                        </Disclosure.Button>
+                                    )
+                                }
+
+                                return (
+                                    <a
+                                        key={item.name}
+                                        href={item.href}
+                                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                                        rel="external"
+                                    >
+                                        {item.name}
+                                    </a>
+                                )
+                            })}
                         </div>
                     </Disclosure.Panel>
                 </>
