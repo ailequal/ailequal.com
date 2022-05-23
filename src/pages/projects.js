@@ -5,9 +5,13 @@ import ProjectsDisclosures from "../components/projects-disclosures";
 const ProjectsPage = () => {
     return (
         <Layout pageTitle='Projects'>
-            <p>
-                So many projects!!
-            </p>
+            <h1>Projects Header</h1>
+
+            <div>
+                <p>
+                    So many projects!!
+                </p>
+            </div>
 
             <ProjectsDisclosures></ProjectsDisclosures>
         </Layout>

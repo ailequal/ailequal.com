@@ -1,12 +1,9 @@
 import * as React from 'react'
-import Container from "./container";
 
-const Header = () => {
+const Header = ({children}) => {
     return (
         <header>
-            <Container>
-                <span>header</span>
-            </Container>
+            {children}
         </header>
     )
 }

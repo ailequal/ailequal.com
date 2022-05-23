@@ -3,6 +3,7 @@ import {Helmet} from "react-helmet";
 import {graphql, useStaticQuery} from "gatsby";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import Header from "./header";
 
 const Layout = ({pageTitle, children}) => {
     const data = useStaticQuery(graphql`
@@ -24,8 +25,12 @@ const Layout = ({pageTitle, children}) => {
 
             <Navbar></Navbar>
 
+            <Header>
+                {children[0]}
+            </Header>
+
             <main>
-                {children}
+                {children[1]}
             </main>
 
             <Footer></Footer>

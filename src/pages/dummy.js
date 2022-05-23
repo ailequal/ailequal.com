@@ -17,9 +17,13 @@ export const query = graphql`
 const DummyPage = ({data}) => {
     return (
         <Layout pageTitle='Dummy'>
-            <h2>Standard page query: {data.site.siteMetadata.title}</h2>
+            <h1>Dummy Header</h1>
 
-            <Tap></Tap>
+            <div>
+                <h2>Standard page query: {data.site.siteMetadata.title}</h2>
+
+                <Tap></Tap>
+            </div>
         </Layout>
     )
 }

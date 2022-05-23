@@ -4,9 +4,13 @@ import Layout from "../components/layout";
 const SkillsPage = () => {
     return (
         <Layout pageTitle='Skills'>
-            <p>
-                So many skills!!
-            </p>
+            <h1>Skills Header</h1>
+
+            <div>
+                <p>
+                    So many skills!!
+                </p>
+            </div>
         </Layout>
     )
 }

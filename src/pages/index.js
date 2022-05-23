@@ -6,13 +6,15 @@ import LoremIpsum from "../components/lorem-ipsum";
 const IndexPage = () => {
     return (
         <Layout pageTitle='Home'>
-            <Container>
+            <h1>Home Header</h1>
+
+            <div>
                 <div className="py-3">
-                <LoremIpsum></LoremIpsum>
-                <LoremIpsum></LoremIpsum>
-                <LoremIpsum></LoremIpsum>
+                    <Container><LoremIpsum></LoremIpsum></Container>
+                    <LoremIpsum></LoremIpsum>
+                    <Container><LoremIpsum></LoremIpsum></Container>
                 </div>
-            </Container>
+            </div>
         </Layout>
     )
 }
