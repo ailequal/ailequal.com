@@ -1,7 +1,7 @@
 import * as React from "react"
 import {graphql} from 'gatsby'
-import Layout from "../components/layout";
-import Tap from "../components/tap";
+import Layout from "../shared/layout";
+import Tap from "../shared/tap";
 
 // Standard page query.
 export const query = graphql`

@@ -1,7 +1,7 @@
 import * as React from "react"
-import Layout from "../components/layout";
-import Container from "../components/container";
-import LoremIpsum from "../components/lorem-ipsum";
+import Layout from "../shared/layout";
+import Container from "../shared/container";
+import LoremIpsum from "../shared/lorem-ipsum";
 
 const IndexPage = () => {
     return (

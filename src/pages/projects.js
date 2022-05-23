@@ -1,6 +1,6 @@
 import * as React from "react"
-import Layout from "../components/layout";
-import ProjectsDisclosures from "../components/projects-disclosures";
+import Layout from "../shared/layout";
+import ProjectsDisclosures from "../features/projects/projects-disclosures";
 
 const ProjectsPage = () => {
     return (
