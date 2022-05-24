@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="flex justify-between items-center py-4 text-white">
                     <div className="basis-3/5 flex justify-between items-center gap-4">
                         <GitHub href="https://github.com/ailequal"></GitHub>
-                        <LinkedIn href="https://www.linkedin.com/in/eliapari93/"></LinkedIn>
+                        <LinkedIn href="https://www.linkedin.com/in/eliapari93"></LinkedIn>
                         <Twitter href="https://twitter.com/eliapari93"></Twitter>
                         <YouTube href="https://www.youtube.com/c/EliaPari"></YouTube>
                     </div>

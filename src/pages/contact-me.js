@@ -11,7 +11,9 @@ const ContactMePage = () => {
 
             <div>
                 <ContainerSmall>
-                    <Form></Form>
+                    <div className="my-4">
+                        <Form></Form>
+                    </div>
                 </ContainerSmall>
             </div>
         </Layout>
