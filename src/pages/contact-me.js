@@ -1,6 +1,8 @@
 import * as React from "react"
 import Header from "../features/contact-me/header";
 import Layout from "../shared/layout";
+import Form from "../features/contact-me/form";
+import ContainerSmall from "../shared/container-small";
 
 const ContactMePage = () => {
     return (
@@ -8,10 +10,9 @@ const ContactMePage = () => {
             <Header></Header>
 
             <div>
-                {/* Contact me. */}
-                <p>
-                    I'll be there in a moment.
-                </p>
+                <ContainerSmall>
+                    <Form></Form>
+                </ContainerSmall>
             </div>
         </Layout>
     )

@@ -17,6 +17,7 @@
   "dependencies": {
     "@headlessui/react": "^1.6.2",
     "@heroicons/react": "^1.0.6",
+    "@tailwindcss/forms": "^0.5.2",
     "gatsby": "^4.14.1",
     "gatsby-plugin-image": "^2.14.1",
     "gatsby-plugin-manifest": "^4.14.0",
