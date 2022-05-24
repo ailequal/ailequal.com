@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Container from "./container";
-import Twitter from "./icons/Twitter";
+import Twitter from "./icons/twitter";
 import LinkedIn from "./icons/linkedin";
 import YouTube from "./icons/youtube";
 import Numbers from "./numbers";
