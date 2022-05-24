@@ -2,9 +2,9 @@ import * as React from "react"
 import ContainerSmall from "../shared/container-small";
 import Header from "../features/projects/header";
 import Layout from "../shared/layout";
-import Project from "../features/projects/project";
+import Projects from "../features/projects/projects";
 
-const projects = [
+const projectsData = [
     {
         title: "Portfolio",
         content: `
@@ -49,15 +49,8 @@ const ProjectsPage = () => {
             <Header></Header>
 
             <div>
-                {/* Projects. */}
                 <ContainerSmall>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
-                        {projects.map((element, index) => {
-                            return (
-                                <Project key={index} data={element}></Project>
-                            )
-                        })}
-                    </div>
+                    <Projects data={projectsData}></Projects>
                 </ContainerSmall>
             </div>
         </Layout>
