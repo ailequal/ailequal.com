@@ -1,29 +1,50 @@
 import * as React from "react"
 import Layout from "../shared/layout";
-import Container from "../shared/container";
 import Header from "../features/home/header";
 import LoremIpsum from "../shared/lorem-ipsum";
-import Skills from "../features/home/skills";
+import Tabs from "../shared/tabs";
+import Accordions from "../shared/accordions";
+import ContainerSmall from "../shared/container-small";
+
+const humanData = [
+    {title: 'aaa', content: 'bbb'},
+    {title: 'ccc', content: 'ddd'},
+    {title: 'eee', content: 'fff'}
+]
+
+const coderData = [
+    {title: '123', content: 'aaa'},
+    {title: '456', content: 'bbb'},
+    {title: '789', content: 'ccc'}
+]
+
+const tabsData = [
+    {title: "Human", content: <Accordions data={humanData}></Accordions>},
+    {title: "Coder", content: <Accordions data={coderData}></Accordions>},
+]
 
 const IndexPage = () => {
     return (
         <Layout pageTitle='Home'>
             <Header></Header>
 
-            <div className="min-h-screen">
-                <div className="mx-auto my-3 w-full sm:w-5/6 text-justify text-xl">
-                    <Container>
-                        <h3 className="my-4 text-center">Hello world!! My name is Elia, I am a Web Developer based in
-                            Italy.</h3>
+            <div>
+                <div className="bg-gray-800">
+                    <ContainerSmall>
+                        <div className="py-3 text-justify text-xl text-white">
+                            <h3 className="mb-4 text-center">
+                                Hello world!! My name is Elia, I am a Web Developer based in Italy.
+                            </h3>
 
-                        <div className="my-4">
-                            <p>Skills will go here somehow!!! Tab: human vs coder skills.</p>
-                            <p>Each tab will have disclosure with stuff inside?!!</p>
-                            <Skills></Skills>
+                            <LoremIpsum></LoremIpsum>
                         </div>
+                    </ContainerSmall>
+                </div>
 
-                        <LoremIpsum></LoremIpsum>
-                    </Container>
+                <div className="my-8">
+                    <ContainerSmall>
+                        <Tabs data={tabsData}></Tabs>
+                    </ContainerSmall>
                 </div>
             </div>
         </Layout>
