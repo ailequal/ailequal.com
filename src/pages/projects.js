@@ -1,7 +1,7 @@
 import * as React from "react"
-import Layout from "../shared/layout";
-import Header from "../features/projects/header";
 import ContainerSmall from "../shared/container-small";
+import Header from "../features/projects/header";
+import Layout from "../shared/layout";
 import LoremIpsum from "../shared/lorem-ipsum";
 
 const ProjectsPage = () => {
