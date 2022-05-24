@@ -5,6 +5,7 @@ import LoremIpsum from "../shared/lorem-ipsum";
 import Tabs from "../shared/tabs";
 import Accordions from "../shared/accordions";
 import ContainerSmall from "../shared/container-small";
+import {Link} from "gatsby";
 
 const humanData = [
     {title: 'aaa', content: 'bbb'},
@@ -29,6 +30,7 @@ const IndexPage = () => {
             <Header></Header>
 
             <div>
+                {/* Introduction. */}
                 <div className="bg-gray-800">
                     <ContainerSmall>
                         <div className="py-3 text-justify text-xl text-white">
@@ -41,9 +43,53 @@ const IndexPage = () => {
                     </ContainerSmall>
                 </div>
 
+                {/* Skills. */}
                 <div className="my-8">
                     <ContainerSmall>
                         <Tabs data={tabsData}></Tabs>
+                    </ContainerSmall>
+                </div>
+
+                {/* Call to action. */}
+                <div className="bg-gray-800">
+                    <ContainerSmall>
+                        <div className="py-4 text-xl text-white">
+                            <h3 className="mb-4 text-center">Do you want to know more?</h3>
+
+                            <div className="flex justify-around items-center">
+                                <Link
+                                    to="/projects"
+                                    className="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                >
+                                    Projects
+                                </Link>
+
+                                <a
+                                    href="https://www.rainypast.com"
+                                    className="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                >
+                                    Blog (WIP)
+                                </a>
+                            </div>
+                        </div>
+                    </ContainerSmall>
+                </div>
+
+                {/* Contact me. */}
+                <div className="my-4">
+                    <ContainerSmall>
+                        <div className="py-2 text-xl">
+                            <h3 className="mb-4 text-center">Are you ready?</h3>
+
+                            <div className="flex justify-around items-center">
+                                <Link
+                                    to="/contact-me"
+                                    className="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                >
+                                    Contact me
+                                </Link>
+                            </div>
+                        </div>
                     </ContainerSmall>
                 </div>
             </div>
