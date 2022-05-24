@@ -3,6 +3,7 @@ import ContainerSmall from "../shared/container-small";
 import Header from "../features/projects/header";
 import Layout from "../shared/layout";
 import Projects from "../features/projects/projects";
+import CallToAction from "../features/projects/call-to-action";
 
 const projectsData = [
     {
@@ -52,6 +53,8 @@ const ProjectsPage = () => {
                 <ContainerSmall>
                     <Projects data={projectsData}></Projects>
                 </ContainerSmall>
+
+                <CallToAction></CallToAction>
             </div>
         </Layout>
     )
