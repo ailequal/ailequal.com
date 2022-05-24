@@ -9,8 +9,8 @@ const Header = () => {
                 <div className="flex flex-col justify-center items-center gap-2 my-10">
                     <StaticImage
                         className="h-40 w-40 rounded-full"
-                        alt="ailequal"
-                        src="../images/ailequal.png"
+                        alt="Elia Pari"
+                        src="../../images/elia-pari.jpg"
                     />
 
                     <div className="flex flex-col justify-center items-center basis-2/3 w-5/6 sm:max-w-md sm:w-4/6">
