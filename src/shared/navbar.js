@@ -3,6 +3,7 @@ import {Disclosure} from '@headlessui/react'
 import {MenuIcon, XIcon} from '@heroicons/react/outline'
 import {Link} from "gatsby";
 import {StaticImage} from "gatsby-plugin-image";
+import Container from "./container";
 
 const navigation = [
     {name: 'Home', href: '/', internal: true},
@@ -16,7 +17,7 @@ const Navbar = () => {
         <Disclosure as="nav" className="bg-gray-800">
             {({open}) => (
                 <>
-                    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                    <Container>
                         <div className="relative flex items-center justify-between h-16">
 
                             {/* Left: navigation. */}
@@ -82,7 +83,7 @@ const Navbar = () => {
                             </div>
 
                         </div>
-                    </div>
+                    </Container>
 
                     {/* Mobile: hamburger menu. */}
                     <Disclosure.Panel className="sm:hidden">

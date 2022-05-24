@@ -4,8 +4,8 @@ import {ChevronUpIcon} from '@heroicons/react/solid'
 
 const Accordions = ({data}) => {
     return (
-        <div className="w-full px-4 pt-16">
-            <div className="mx-auto w-full max-w-md rounded-2xl bg-white p-2">
+        <div className="w-full">
+            <div className="mx-auto w-full rounded-2xl bg-white">
 
                 {data.map((element, index) => {
                     return (

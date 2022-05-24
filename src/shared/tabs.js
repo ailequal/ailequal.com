@@ -7,10 +7,10 @@ function classNames(...classes) {
 
 const Tabs = ({data}) => {
     return (
-        <div className="w-full max-w-md m-auto px-2 py-16 sm:px-0">
+        <div className="w-full m-auto">
             <Tab.Group>
 
-                <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+                <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20">
                     {data.map((element, index) => (
                         <Tab
                             key={index}

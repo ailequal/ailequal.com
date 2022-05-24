@@ -19,8 +19,8 @@ const coderData = [
 ]
 
 const tabsData = [
-    {title: "Human", content: <Accordions data={humanData}></Accordions>},
-    {title: "Coder", content: <Accordions data={coderData}></Accordions>},
+    {title: "Human skills", content: <Accordions data={humanData}></Accordions>},
+    {title: "Coder skills", content: <Accordions data={coderData}></Accordions>},
 ]
 
 const IndexPage = () => {
