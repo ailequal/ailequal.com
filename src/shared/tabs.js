@@ -17,7 +17,7 @@ const Tabs = ({data}) => {
                             className={({selected}) =>
                                 classNames(
                                     'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
-                                    'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+                                    'ring-white ring-opacity-60 ring-offset-2 ring-offset-gray-800 focus:outline-none focus:ring-2',
                                     selected
                                         ? 'bg-white shadow'
                                         : 'text-white/[0.80] hover:bg-white/[0.12] hover:text-white'
@@ -31,13 +31,7 @@ const Tabs = ({data}) => {
 
                 <Tab.Panels className="mt-2">
                     {data.map((element, index) => (
-                        <Tab.Panel
-                            key={index}
-                            className={classNames(
-                                'rounded-xl bg-white p-3',
-                                'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
-                            )}
-                        >
+                        <Tab.Panel key={index} className="rounded-xl bg-white p-3">
                             {element.content}
                         </Tab.Panel>
                     ))}

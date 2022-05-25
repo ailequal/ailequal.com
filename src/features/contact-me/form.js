@@ -73,8 +73,6 @@ const Form = () => {
                         </div>
 
                         <div className="px-4 py-3 text-right sm:px-6">
-                            <div data-netlify-recaptcha="true"></div>
-
                             <button
                                 type="submit"
                                 className="bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
