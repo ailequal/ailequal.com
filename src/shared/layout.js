@@ -17,7 +17,7 @@ const Layout = ({pageTitle, children}) => {
     `)
 
     return (
-        <div>
+        <div className="flex flex-col h-screen justify-between">
             <Helmet>
                 <meta charSet="utf-8"/>
                 <title>{pageTitle} - {data.site.siteMetadata.title}</title>

@@ -41,7 +41,7 @@ const Form = () => {
                             <div className="col-span-12">
                                 <label htmlFor="email-address"
                                        className="block text-sm font-medium">
-                                    Email address
+                                    Email
                                 </label>
                                 <input
                                     type="text"
