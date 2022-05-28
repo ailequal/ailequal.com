@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0 - 2022-05-28
+
+* Add - Updated the main content of the homepage.
+
 ## 0.0.4 - 2022-05-25
 
 * Fix - Minor various fixes.
