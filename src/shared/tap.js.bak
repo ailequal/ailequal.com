@@ -19,11 +19,7 @@ const Tap = () => {
             <h2>Static component query: {data.site.siteMetadata.description}</h2>
 
             <div>
-                <h3>Static images:</h3>
-                <StaticImage
-                    alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
-                    src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
-                />
+                <h3>Static image:</h3>
                 <StaticImage
                     alt="ailequal"
                     src="../images/ailequal.png"
