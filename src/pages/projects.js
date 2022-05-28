@@ -7,7 +7,7 @@ import CallToAction from "../features/projects/call-to-action";
 
 const projectsData = [
     {
-        title: "Portfolio",
+        title: "ailequal.com",
         content: `
             My portfolio website built with Gatsby and Tailwind CSS
             (it's driven by React under the hood).
@@ -25,7 +25,7 @@ const projectsData = [
         href: "https://github.com/ailequal/ng-fintech"
     },
     {
-        title: "Witte",
+        title: "witte",
         content: `
              What is there to eat?
              A WordPress plugin that leverages the CMS features in order to organize courses and meals across the whole week.

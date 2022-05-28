@@ -3,21 +3,22 @@ import ContainerSmall from "../../shared/container-small";
 import Tabs from "../../shared/tabs";
 import Accordions from "../../shared/accordions";
 
-const humanData = [
-    {title: 'aaa', content: 'bbb'},
-    {title: 'ccc', content: 'ddd'},
-    {title: 'eee', content: 'fff'}
+const softData = [
+    {title: 'Patience', content: 'I face the difficulties with firmness and determination.'},
+    {title: 'Curiosity', content: 'I delve with enthusiasm into things that catch my attention.'},
+    {title: 'Support', content: 'I am ready to lend my knowledge and experience to anyone.'}
 ]
 
-const coderData = [
-    {title: '123', content: 'aaa'},
-    {title: '456', content: 'bbb'},
-    {title: '789', content: 'ccc'}
+const hardData = [
+    {title: 'Programming languages', content: 'Bash | JavaScript | TypeScript | PHP'},
+    {title: 'Frameworks', content: 'Angular | React | Gatsby | jQuery | WordPress | Laravel'},
+    {title: 'Tools', content: 'Git | Docker | Devilbox | Linux | Nginx | Redis | phpMyAdmin'},
+    {title: 'Libraries', content: 'Angular Material | Bootstrap | TailwindCSS | RxJS | Carbon Fields | CMB2'}
 ]
 
 const tabsData = [
-    {title: "Human skills", content: <Accordions data={humanData}></Accordions>},
-    {title: "Coder skills", content: <Accordions data={coderData}></Accordions>},
+    {title: "Soft skills", content: <Accordions data={softData}></Accordions>},
+    {title: "Hard skills", content: <Accordions data={hardData}></Accordions>},
 ]
 
 const Skills = () => {

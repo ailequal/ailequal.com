@@ -1,6 +1,5 @@
 import * as React from 'react'
 import ContainerSmall from "../../shared/container-small";
-import LoremIpsum from "../../shared/lorem-ipsum";
 
 const Introduction = () => {
     return (
@@ -8,10 +7,11 @@ const Introduction = () => {
             <ContainerSmall>
                 <div className="py-3 text-justify text-xl text-white">
                     <h3 className="mb-4 text-center">
-                        Hello world!! My name is Elia, I am a Web Developer based in Italy.
+                        Hello world. My name is Elia, I am a Web Developer based in Italy.
                     </h3>
 
-                    <LoremIpsum></LoremIpsum>
+                    <p>I’m a computer geek by nature. I have always been in love with the information technology and the
+                        English language: I found out that programming is the perfect mix between these two.</p>
                 </div>
             </ContainerSmall>
         </div>
