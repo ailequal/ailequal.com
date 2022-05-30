@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 - 2022-05-30
+
+* Enhancement - Updated favicon.
+
 ## 1.0.0 - 2022-05-28
 
 * Add - Updated the main content of the homepage.
